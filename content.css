@@ -1,0 +1,81 @@
+#ymn-panel {
+  position: fixed;
+  right: 16px;
+  top: 112px;
+  width: 340px;
+  max-height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  background: #1f1f1f;
+  color: #f1f1f1;
+  border: 1px solid #3f3f3f;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  font: 13px/1.4 Roboto, Arial, sans-serif;
+  z-index: 2147483647;
+}
+#ymn-panel[hidden] { display: none; }
+#ymn-panel .ymn-bar { display: flex; gap: 6px; padding: 10px; }
+#ymn-panel input {
+  flex: 1;
+  min-width: 0;
+  background: #121212;
+  color: inherit;
+  border: 1px solid #3f3f3f;
+  border-radius: 8px;
+  padding: 6px 8px;
+  outline: none;
+}
+#ymn-panel .ymn-add {
+  background: #3ea6ff;
+  color: #0f0f0f;
+  border: 0;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#ymn-panel .ymn-list { overflow-y: auto; padding: 0 10px 10px; }
+#ymn-panel .ymn-row { display: flex; gap: 8px; align-items: baseline; padding: 4px 0; }
+#ymn-panel .ymn-time {
+  background: none;
+  border: 0;
+  color: #3ea6ff;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+}
+#ymn-panel .ymn-text { flex: 1; word-break: break-word; }
+#ymn-panel .ymn-del {
+  background: none;
+  border: 0;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 2px;
+}
+#ymn-panel .ymn-del:hover { color: #ff6b6b; }
+#ymn-fab {
+  position: fixed;
+  right: 16px;
+  top: 64px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #3f3f3f;
+  background: #1f1f1f;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 2147483646;
+}
+#ymn-panel .ymn-close {
+  background: none;
+  border: 0;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0 4px;
+}
+#ymn-panel .ymn-close:hover { color: #fff; }
